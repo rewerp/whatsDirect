@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { View, Linking, Modal } from 'react-native';
+import React from 'react';
+import { View, Modal } from 'react-native';
 
 import { ButtonSend } from '../../components/ButtonSend';
 import { LogoMain } from '../../components/Logo';
@@ -18,13 +18,12 @@ type Country = {
 }
 
 export function Home() {
-  const [modalVisible, setModalVisible] = useState(false);
-  // const { modalVisible, handleModalVisible, selectedCountry } = useGlobal();
-  // const country: Country = {
-  //   code: selectedCountry ? selectedCountry.code : 'br',
-  //   id: selectedCountry ? selectedCountry.id : '55',
-  //   name: selectedCountry ? selectedCountry.name : 'Brasil'
-  // }
+  const { modalVisible, handleModalVisible, selectedCountry } = useGlobal();
+  const country: Country = {
+    code: selectedCountry.code,
+    id: selectedCountry.id,
+    name: selectedCountry.name
+  }
 
   return (
     <View style={styles.screen} >
@@ -32,20 +31,17 @@ export function Home() {
         animationType="slide"
         transparent={true}
         visible={modalVisible}
-        onRequestClose={() => setModalVisible(false)}
+        onRequestClose={() => handleModalVisible(false)}
       >
         <CountryPicker />
       </Modal>
       <LogoMain />
       <View style={styles.container} >
         <ButtonCountry
-          // isoCode={country.code}
-          // ddi={country.id}
-          // countryName={country.name}
-          isoCode='br'
-          ddi='55'
-          countryName='Brasil'
-          onPress={() => setModalVisible(true)}
+          isoCode={country.code}
+          ddi={country.id}
+          countryName={country.name}
+          onPress={() => handleModalVisible(true)}
         />
         <InputNumber />
         <ButtonSend

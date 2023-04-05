@@ -24,7 +24,6 @@ export function CountryPicker() {
                 isoCode={item.id}
                 ddi={item.code}
                 countryName={item.name}
-                // onPress={() => }
               />
           }
           keyExtractor={item => item.id}

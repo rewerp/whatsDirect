@@ -13,6 +13,7 @@ type GlobalContextType = {
   modalVisible: boolean;
   handleModalVisible: (visible: boolean) => void;
   selectCountry: (country: Country) => void;
+  sendMessage: () => void;
 }
 
 type ProviderType = {
@@ -22,7 +23,7 @@ type ProviderType = {
 export const GlobalContext = createContext({} as GlobalContextType);
 
 export function GlobalProvider({ children }: ProviderType) {
-  const [selectedCountry, setSelectedCountry] = useState({} as Country);
+  const [selectedCountry, setSelectedCountry] = useState({ code: 'br', id: '55', name: 'Brasil' } as Country);
   const [modalVisible, setModalVisible] = useState(false);
 
   function sendMessage() {
@@ -34,6 +35,8 @@ export function GlobalProvider({ children }: ProviderType) {
   }
 
   function selectCountry(country: Country) {
+    console.log(country);
+
     if (country) {
       setSelectedCountry({
         code: country.code,
@@ -49,7 +52,8 @@ export function GlobalProvider({ children }: ProviderType) {
         modalVisible,
         handleModalVisible,
         selectedCountry,
-        selectCountry
+        selectCountry,
+        sendMessage
       }}
     >
       {children}

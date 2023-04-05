@@ -28,10 +28,8 @@ export function CountryItem(props: CountryItemProps) {
   }
 
   function handleSelectCountry(country: Country) {
-    console.log(country);
-
-    // selectCountry(country);
-    // handleModalVisible(false);
+    selectCountry(country);
+    handleModalVisible(false);
   }
 
   return (
