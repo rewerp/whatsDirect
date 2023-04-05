@@ -1,4 +1,6 @@
-<img align="center" src="https://raw.githubusercontent.com/rewerp/whatsDirect/07ec2095c72b9ddd3101f2de05bb5680e03e842b/src/assets/images/logoMain.svg" title="Whats Direct" />
+<div align="center">
+  <img src="https://raw.githubusercontent.com/rewerp/whatsDirect/07ec2095c72b9ddd3101f2de05bb5680e03e842b/src/assets/images/logoMain.svg" title="Whats Direct" />
+</div>
 
 ## Sobre a aplicação
 
