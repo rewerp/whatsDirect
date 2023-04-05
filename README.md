@@ -26,7 +26,7 @@ It simply uses the WhatsApp URL to create a link with the country code and the p
 * <img alt="VSCode" title="VS Code" height="20" width="20" src="https://raw.githubusercontent.com/rewerp/icons/ec13fe8d88a6c8acb8fd0275614fd9453bdd104b/devicons/vscode-original.svg"> **VS Code**
 
 ## Telas da aplicação / Screens
-<div align="center">
+<div align="center" style="justfy-content=space-between ">
   <img alt="Splash" title="Splash screen" height="500"  src="https://raw.githubusercontent.com/rewerp/whatsDirect/main/example-screens/whatsDirectScreen-00.jpg">
   <img alt="Splash" title="Splash screen" height="500" src="https://raw.githubusercontent.com/rewerp/whatsDirect/main/example-screens/whatsDirectScreen-01.jpg">
   <img alt="Splash" title="Splash screen" height="500" src="https://raw.githubusercontent.com/rewerp/whatsDirect/main/example-screens/whatsDirectScreen-02.jpg">
