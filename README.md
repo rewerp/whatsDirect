@@ -28,6 +28,6 @@ It simply uses the WhatsApp URL to create a link with the country code and the p
 ## Telas da aplicação / Screens
 <div>
   <img alt="Splash" title="Splash screen" height="500"  src="https://raw.githubusercontent.com/rewerp/whatsDirect/main/example-screens/whatsDirectScreen-00.jpg">
-  <img alt="Splash" title="Splash screen" height="500" src="https://raw.githubusercontent.com/rewerp/whatsDirect/main/example-screens/whatsDirectScreen-01.jpg">
-  <img alt="Splash" title="Splash screen" height="500" src="https://raw.githubusercontent.com/rewerp/whatsDirect/main/example-screens/whatsDirectScreen-02.jpg">
+  <img alt="Main" title="Main screen" height="500" src="https://raw.githubusercontent.com/rewerp/whatsDirect/main/example-screens/whatsDirectScreen-01.jpg">
+  <img alt="Selection" title="Selection screen" height="500" src="https://raw.githubusercontent.com/rewerp/whatsDirect/main/example-screens/whatsDirectScreen-02.jpg">
 </div>

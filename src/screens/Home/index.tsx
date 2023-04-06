@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Modal } from 'react-native';
+import React, { useState } from 'react';
+import { View, Modal, Linking } from 'react-native';
 
 import { ButtonSend } from '../../components/ButtonSend';
 import { LogoMain } from '../../components/Logo';
@@ -19,10 +19,21 @@ type Country = {
 
 export function Home() {
   const { modalVisible, handleModalVisible, selectedCountry } = useGlobal();
+  const [phoneNumber, setPhoneNumber] = useState('');
   const country: Country = {
     code: selectedCountry.code,
     id: selectedCountry.id,
     name: selectedCountry.name
+  }
+
+  function sendMessage() {
+    if ((country.id !== '') && (phoneNumber !== '')) {
+      Linking.openURL(`https://wa.me/${country.id}${phoneNumber}`)
+    }
+  }
+
+  function handlePhoneNumberMask(phoneNumber: string) {
+    setPhoneNumber(phoneNumber.replace(/\D/g, ""));
   }
 
   return (
@@ -43,9 +54,13 @@ export function Home() {
           countryName={country.name}
           onPress={() => handleModalVisible(true)}
         />
-        <InputNumber />
+        <InputNumber
+          value={phoneNumber}
+          onChangeText={(value) => handlePhoneNumberMask(value)}
+        />
         <ButtonSend
           title='Enviar'
+          onPress={() => sendMessage()}
         />
       </View>
     </View>

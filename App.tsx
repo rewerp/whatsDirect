@@ -6,7 +6,6 @@ import { GlobalProvider } from './src/contexts/globalContext';
 import BackGroundImg from './src/assets/images/wtsback.png';
 
 
-
 export default function App() {
   return (
     <GlobalProvider>

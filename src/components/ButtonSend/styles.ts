@@ -13,6 +13,6 @@ export const styles = StyleSheet.create({
   text: {
     color: 'white',
     fontWeight: 'bold',
-    fontSize: 22,
+    fontSize: 20,
   }
 });

@@ -1,5 +1,4 @@
 import React, { createContext, useState, ReactNode } from "react";
-import { Linking } from "react-native";
 
 
 type Country = {
@@ -13,7 +12,6 @@ type GlobalContextType = {
   modalVisible: boolean;
   handleModalVisible: (visible: boolean) => void;
   selectCountry: (country: Country) => void;
-  sendMessage: () => void;
 }
 
 type ProviderType = {
@@ -26,24 +24,12 @@ export function GlobalProvider({ children }: ProviderType) {
   const [selectedCountry, setSelectedCountry] = useState({ code: 'br', id: '55', name: 'Brasil' } as Country);
   const [modalVisible, setModalVisible] = useState(false);
 
-  function sendMessage() {
-    Linking.openURL(`https://wa.me/${0}${0}`)
-  }
-
   function handleModalVisible(visible: boolean) {
     setModalVisible(visible);
   }
 
   function selectCountry(country: Country) {
-    console.log(country);
-
-    if (country) {
-      setSelectedCountry({
-        code: country.code,
-        id: country.id,
-        name: country.name
-      });
-    }
+    country && setSelectedCountry({ code: country.code, id: country.id, name: country.name })
   }
 
   return (
@@ -52,8 +38,7 @@ export function GlobalProvider({ children }: ProviderType) {
         modalVisible,
         handleModalVisible,
         selectedCountry,
-        selectCountry,
-        sendMessage
+        selectCountry
       }}
     >
       {children}

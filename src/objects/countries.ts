@@ -1,10 +1,10 @@
-type Country = {
+export type CountryProps = {
   code: string;
   id: string;
   name: string;
 }
 
-export const Countries: Array<Country> = [
+export const Countries: Array<CountryProps> = [
   { code: '93', id: 'af', name: 'Afghanistão' },
   { code: '27', id: 'za', name: 'África do Sul' },
   { code: '355', id: 'al', name: 'Albânia' },
@@ -201,7 +201,7 @@ export const Countries: Array<Country> = [
   { code: '1 758', id: 'lc', name: 'Saint Lucia' },
   { code: '1 599', id: 'mf', name: 'Saint Martin' },
   { code: '508', id: 'pm', name: 'St. Pierre and Miquelon' },
-  { code: '1 784', id: 'vc', name: 'St. Vincent and the Grenadines' },
+  { code: '1', id: 'vc', name: 'St. Vincent and the Grenadines' },
   { code: '249', id: 'sd', name: 'Sudão' },
   { code: '597', id: 'sr', name: 'Suriname' },
   { code: '268', id: 'sz', name: 'Suazilândia' },

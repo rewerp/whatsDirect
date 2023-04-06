@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     marginBottom: '30%',
   },
   container: {
-    width: '80%',
+    width: '85%',
     height: 250,
     alignItems: 'center',
     justifyContent: 'space-evenly',

@@ -2,8 +2,6 @@ import React from "react";
 import { Text, TouchableOpacity, TouchableOpacityProps, View } from "react-native";
 import CountryFlag from "react-native-country-flag";
 
-import { useGlobal } from "../../hooks/useGlobal";
-
 import { styles } from "./styles";
 
 
@@ -14,8 +12,6 @@ type ButtonCountryPros = TouchableOpacityProps & {
 };
 
 export function ButtonCountry(props: ButtonCountryPros) {
-  const { modalVisible, handleModalVisible, selectedCountry, selectCountry } = useGlobal();
-
   return (
     <TouchableOpacity 
       style={styles.input} 

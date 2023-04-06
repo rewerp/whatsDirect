@@ -19,10 +19,10 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   textContainer: {
-    flex: 4,
+    flex: 5,
     height: '100%',
     justifyContent: 'center',
-    paddingLeft: 10,
+    paddingLeft: 5,
     paddingRight: 10,
   },
   text: {

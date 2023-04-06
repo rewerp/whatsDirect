@@ -7,6 +7,6 @@ export const styles = StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 5,
     textAlign: 'center',
-    fontSize: 22,
+    fontSize: 20,
   },
 });

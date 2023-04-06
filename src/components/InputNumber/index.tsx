@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { TextInputProps } from 'react-native';
 import { TextInputMask } from 'react-native-masked-text';
 
 import { styles } from './styles';
 
+
 type InputNumberProps = TextInputProps;
 
 export function InputNumber(props: InputNumberProps) {
-  const [phoneNumber, setPhoneNumber] = useState('');
-
   return (
     <TextInputMask
       style={styles.input}
@@ -21,8 +20,8 @@ export function InputNumber(props: InputNumberProps) {
         withDDD: true,
         dddMask: '(99) '
       }}
-      value={phoneNumber}
-      onChangeText={setPhoneNumber}
+      value={props.value}
+      onChangeText={props.onChangeText}
     />
   );
 }

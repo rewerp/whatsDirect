@@ -12,7 +12,6 @@ export const styles = StyleSheet.create({
   },
   flagContainer: {
     flex: 1,
-    height: '70%',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -22,8 +21,8 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   text: {
-    fontSize: 22,
-    paddingLeft: 10,
+    fontSize: 18,
+    paddingLeft: 5,
     paddingRight: 10,
   },
 });
