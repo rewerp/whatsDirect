@@ -24,7 +24,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#0A0A0C"
-      }
+      },
+      "package": "com.rewerp.whatsDirect"
     },
     "web": {
       "favicon": "./assets/favicon.png"
