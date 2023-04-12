@@ -21,8 +21,5 @@ Apenas utiliza a URL do WhatsApp, para criar um link com código do país e núm
 
 <div>
   <img alt="Splash" title="Splash screen" height="500"  src="https://raw.githubusercontent.com/rewerp/whatsDirect/main/example-screens/whatsDirectScreen-00.jpg">
-  <img alt="Main" title="Main screen" height="500" src="https://raw.githubusercontent.com/rewerp/whatsDirect/main/example-screens/whatsDirectScreen-01.jpg">
-  <img alt="Selection" title="Selection screen" height="500" src="https://raw.githubusercontent.com/rewerp/whatsDirect/main/example-screens/whatsDirectScreen-02.jpg">
+  <img alt="WhatsDirect" title="Whats Direct" height="500" src="https://raw.githubusercontent.com/rewerp/whatsDirect/main/example-screens/whatsDirect.gif">
 </div>
-
-<img alt="Selection" title="Selection screen" height="500" src="https://raw.githubusercontent.com/rewerp/whatsDirect/main/example-screens/whatsDirect.gif">
